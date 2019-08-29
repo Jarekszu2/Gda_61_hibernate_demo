@@ -18,5 +18,6 @@
         <property name="show_sql">true</property>
 
         <mapping class="packHibernate_Demo.Student"/>
+        <mapping class="packHibernate_Demo.Grade"/>
     </session-factory>
 </hibernate-configuration>
