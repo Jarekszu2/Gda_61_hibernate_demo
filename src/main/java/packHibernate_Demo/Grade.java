@@ -28,7 +28,7 @@ public class Grade implements IBaseEntity { // ocena z przedmiotu
 
     private double value;
 
-    @ToString.Exclude
+    @ToString.Exclude // dodajemy bo bez tego przy selekcie stack overflow (wyłączamy toString() z @Date(Lombok) bo by w kółko pętlił)
     @ManyToOne()
     private Student student;
 }

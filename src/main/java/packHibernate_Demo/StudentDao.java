@@ -35,13 +35,14 @@ public class StudentDao {
 //        List<Student> list = new ArrayList<>();
 //        SessionFactory factory = HibernateUtil.getSessionFactory();
 //        try (Session session = factory.openSession()) {
-//            // Narzędzie do kreowania zapytania, do tworzenia query i budowania klauzuli 'whwrw'
+//            // Narzędzie do kreowania zapytania, do tworzenia query i budowania klauzuli 'where'
 //            CriteriaBuilder cb = session.getCriteriaBuilder();
 //
 //            // Oiekt reprezentujący zapytanie o <typ generyczny>
 //            CriteriaQuery<Student> criteriaQuery = cb.createQuery(Student.class);
 //
-//            // reprezentuje tanelę 'Student' i tworzymy tą instancję żeby powiedzieć "do jakiej tabeli chcemy wykonać zapytanie"
+//            // reprezentuje tabelę 'Student' i tworzymy tą instancję żeby powiedzieć "do jakiej tabeli chcemy wykonać zapytanie"
+//            // (...odpowiednik from w SELECT FROM..)
 //            Root<Student> rootTable = criteriaQuery.from(Student.class);
 //
 //            // wykonanie select'a z tabeli

@@ -39,7 +39,7 @@ public class EntityDao {
             // Oiekt reprezentujący zapytanie o <typ generyczny>
             CriteriaQuery<T> criteriaQuery = cb.createQuery(classT);
 
-            // reprezentuje tanelę 'Student' i tworzymy tą instancję żeby powiedzieć "do jakiej tabeli chcemy wykonać zapytanie"
+            // reprezentuje tabelę 'Student' i tworzymy tą instancję żeby powiedzieć "do jakiej tabeli chcemy wykonać zapytanie"
             Root<T> rootTable = criteriaQuery.from(classT);
 
             // wykonanie select'a z tabeli
